@@ -13,7 +13,7 @@ export default function HeroSection() {
       <div className={styles.heroOverlay} />
       <img
         className={styles.heroBg}
-        src="https://images.unsplash.com/photo-1587174486073-ae5e5cff23aa?auto=format&fit=crop&w=1800&q=80"
+        src="/hero.avif"
         alt="Golf course at sunrise"
       />
       <div className={styles.heroContent}>
