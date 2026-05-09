@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-ChildItem -Path \"d:\\\\Projects\\\\golf-next\" -Depth 2)",
+      "Bash(Select-Object -Property FullName, PSIsContainer)"
+    ]
+  }
+}

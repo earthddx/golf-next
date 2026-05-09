@@ -10,7 +10,7 @@ export default function ContactSection() {
     e.preventDefault()
     setFormStatus('sending')
     try {
-      const res = await fetch('https://formspree.io/f/REPLACE_WITH_FORM_ID', {
+      const res = await fetch('https://formspree.io/f/xrejywzj', {
         method: 'POST',
         headers: { Accept: 'application/json' },
         body: new FormData(e.currentTarget),
