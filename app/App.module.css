@@ -169,16 +169,6 @@
   margin-top: 60px;
 }
 
-.heroEyebrow {
-  font-size: 13px;
-  font-weight: 600;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--gold);
-  margin-bottom: 16px;
-  animation: heroFadeUp 0.7s cubic-bezier(0.22, 1, 0.36, 1) 0.25s both;
-}
-
 .heroTitle {
   font-size: clamp(48px, 7vw, 88px);
   font-weight: 700;

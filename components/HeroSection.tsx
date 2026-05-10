@@ -17,7 +17,6 @@ export default function HeroSection() {
         alt="Golf course at sunrise"
       />
       <div className={styles.heroContent}>
-        <p className={styles.heroEyebrow}>Alle Golf Lab LLC</p>
         <h1 className={styles.heroTitle}>
           Elevate Your Game
           <br />
