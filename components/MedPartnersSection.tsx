@@ -33,7 +33,7 @@ export default function MedPartnersSection() {
           <div className={styles.medPartnerHeader}>
             <div className={styles.medPartnerInfo}>
               <img
-                src="https://www.restonobgyn.com/wp-content/uploads/2025/08/dr-iskander-pro-image.jpg"
+                src="/images/dr-iskander.jpg"
                 alt="Dr. George Iskander"
                 className={styles.medPartnerPhoto}
               />

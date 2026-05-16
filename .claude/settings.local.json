@@ -2,7 +2,17 @@
   "permissions": {
     "allow": [
       "Bash(Get-ChildItem -Path \"d:\\\\Projects\\\\golf-next\" -Depth 2)",
-      "Bash(Select-Object -Property FullName, PSIsContainer)"
+      "Bash(Select-Object -Property FullName, PSIsContainer)",
+      "WebFetch(domain:unsplash.com)",
+      "WebFetch(domain:w.wiki)",
+      "WebFetch(domain:www.mediawiki.org)",
+      "WebFetch(domain:commons.wikimedia.org)",
+      "Bash(curl -sLo public/images/services/biomechanics.jpg \"https://images.unsplash.com/photo-1535131749006-b7f58c99034b?auto=format&fit=crop&w=800&q=80\")",
+      "Bash(curl -sLo public/images/services/tpi-fitness.jpg \"https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&w=800&q=80\")",
+      "Bash(curl -sLo public/images/services/medical-fitness.jpg \"https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=800&q=80\")",
+      "Bash(curl -sLo public/images/services/eldoa.jpg \"https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=800&q=80\")",
+      "Bash(curl -sLo public/images/services/kvest.jpg \"https://images.unsplash.com/photo-1587174486073-ae5e5cff23aa?auto=format&fit=crop&w=800&q=80\")",
+      "Bash(curl -sLo \"d:/Projects/golf-next/public/images/dr-iskander.jpg\" \"https://www.restonobgyn.com/wp-content/uploads/2025/08/dr-iskander-pro-image.jpg\")"
     ]
   }
 }

@@ -15,30 +15,39 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'Alle Golf Lab LLC — Alessandra Miller',
+  title: 'Alle Golf Lab LLC — Alessandra Miller | Northern Virginia Golf Fitness & Biomechanics Coach',
   description:
-    'Alle Golf Lab LLC — science-based golf biomechanics coaching and fitness training with Alessandra Miller. MyTPI, K-Vest 3D Analysis, ELDOA, and more. Available in-person and online.',
+    'Alle Golf Lab LLC — science-based golf biomechanics coaching and fitness training with Alessandra Miller. Serving Northern Virginia and the DMV area. MyTPI, K-Vest 3D Analysis, ELDOA, and more. Available in-person and online.',
   authors: [{ name: 'Alessandra Miller' }],
   alternates: { canonical: 'https://allegolflab.com' },
+  keywords: [
+    'golf coach Northern Virginia',
+    'golf biomechanics DMV',
+    'golf fitness trainer NoVA',
+    'TPI Fitness & Medical certified Northern Virginia',
+    'K-Vest 3D golf analysis Virginia',
+    'Alle Golf Lab',
+    'Alessandra Miller golf',
+  ],
   openGraph: {
     type: 'website',
     url: 'https://allegolflab.com',
-    title: 'Alle Golf Lab LLC — Alessandra Miller',
+    title: 'Alle Golf Lab LLC — Alessandra Miller | Northern Virginia Golf Fitness & Biomechanics Coach',
     description:
-      'Science-based golf biomechanics coaching and fitness training. MyTPI, K-Vest 3D Analysis, ELDOA, and corrective exercise. Available in-person and online.',
+      'Science-based golf biomechanics coaching and fitness training serving Northern Virginia and the DMV area. MyTPI, K-Vest 3D Analysis, ELDOA, and corrective exercise. Available in-person and online.',
     images: [
       {
         url: 'https://allegolflab.com/thumbnail.jpeg',
-        alt: 'Alessandra Miller — Golf Biomechanics Coach',
+        alt: 'Alessandra Miller — Golf Biomechanics Coach, Northern Virginia',
       },
     ],
     siteName: 'Alle Golf Lab LLC',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Alle Golf Lab LLC — Alessandra Miller',
+    title: 'Alle Golf Lab LLC — Alessandra Miller | Northern Virginia Golf Fitness & Biomechanics Coach',
     description:
-      'Science-based golf biomechanics coaching and fitness training. MyTPI, K-Vest 3D Analysis, ELDOA, and corrective exercise.',
+      'Science-based golf biomechanics coaching and fitness training in Northern Virginia / DMV. MyTPI, K-Vest 3D Analysis, ELDOA, and corrective exercise.',
     images: ['https://allegolflab.com/thumbnail.jpeg'],
   },
 }
@@ -51,8 +60,15 @@ const jsonLd = {
       name: 'Alle Golf Lab LLC',
       url: 'https://allegolflab.com',
       email: 'allemiller@allegolflab.com',
-      description: 'Science-based golf biomechanics coaching and fitness training.',
+      description:
+        'Science-based golf biomechanics coaching and fitness training serving Northern Virginia and the DMV area.',
       image: 'https://allegolflab.com/thumbnail.jpeg',
+      areaServed: [
+        { '@type': 'AdministrativeArea', name: 'Northern Virginia' },
+        { '@type': 'AdministrativeArea', name: 'Maryland' },
+        { '@type': 'AdministrativeArea', name: 'Washington DC Metro Area' },
+        { '@type': 'AdministrativeArea', name: 'DMV' },
+      ],
       founder: { '@id': '#alessandra' },
       sameAs: [],
     },
