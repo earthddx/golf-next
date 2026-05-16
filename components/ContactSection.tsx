@@ -87,7 +87,7 @@ export default function ContactSection() {
               <label className={styles.label}>Medical Services — Interested In</label>
               <select className={styles.input} name="medicalInterest">
                 <option value="">Select a service (optional)…</option>
-                <option>Weight Loss — GLP-1</option>
+                <option>Weight Loss (GLP-1)</option>
                 <option>Biote Hormone Replacement</option>
                 <option>MonaLisa Laser Treatment</option>
                 <option>Pelvic Floor Therapy</option>
