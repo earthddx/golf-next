@@ -16,7 +16,7 @@ const MED_SERVICES = [
 
 export default function MedPartnersSection() {
   return (
-    <section className={styles.medPartners}>
+    <section id="partners" className={styles.medPartners}>
       <div className={styles.container}>
         <div className={styles.sectionHeader}>
           <p className={styles.sectionEyebrow}>Service Affiliations</p>

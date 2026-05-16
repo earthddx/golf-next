@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react'
 import { scrollToSection } from '@/lib/utils'
 
-const NAV_LINKS = ['About', 'Services', 'Method', 'Contact']
+const NAV_LINKS = ['About', 'Services', 'Method', 'Partners', 'Contact']
 import styles from '@/app/App.module.css'
 
 export default function Navbar() {
@@ -17,19 +17,20 @@ export default function Navbar() {
 
   const handleNav = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
     e.preventDefault()
+    e.stopPropagation()
     setMenuOpen(false)
     scrollToSection(id)
   }
 
   return (
-    <header className={`${styles.navbar} ${scrolled ? styles.navbarScrolled : ''}`}>
+    <header
+      className={`${styles.navbar} ${scrolled ? styles.navbarScrolled : ''}`}
+      onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+    >
       <a
         href="#"
         className={styles.logo}
-        onClick={(e) => {
-          e.preventDefault()
-          window.scrollTo({ top: 0, behavior: 'smooth' })
-        }}
+        onClick={(e) => e.preventDefault()}
       >
         <span className={styles.logoMark}>A</span>
         <span className={styles.logoText}>Alle Golf Lab</span>
@@ -57,7 +58,7 @@ export default function Navbar() {
 
       <button
         className={styles.burger}
-        onClick={() => setMenuOpen((o) => !o)}
+        onClick={(e) => { e.stopPropagation(); setMenuOpen((o) => !o) }}
         aria-label="Toggle menu"
       >
         <span className={menuOpen ? styles.burgerLineTop : ''} />

@@ -35,23 +35,6 @@ export default function AboutSection() {
     <section id="about" className={styles.about}>
       <div className={styles.container}>
         <div className={styles.aboutGrid}>
-          <div className={styles.aboutCertsCol}>
-            <p className={styles.certSectionLabel}>
-              Education &amp; Certifications
-            </p>
-            <ul className={styles.certCardList}>
-              {CERTIFICATIONS.map((c) => (
-                <li key={c.title} className={styles.certCard}>
-                  <span className={styles.certCardDot} />
-                  <div>
-                    <span className={styles.certCardTitle}>{c.title}</span>
-                    <span className={styles.certCardSub}>{c.sub}</span>
-                  </div>
-                </li>
-              ))}
-            </ul>
-          </div>
-
           <div className={styles.aboutText}>
             <img
               src="/thumbnail.jpeg"
@@ -78,6 +61,23 @@ export default function AboutSection() {
               individualized programs that produce lasting results on the
               course.
             </p>
+          </div>
+
+          <div className={styles.aboutCertsCol}>
+            <p className={styles.certSectionLabel}>
+              Education &amp; Certifications
+            </p>
+            <ul className={styles.certCardList}>
+              {CERTIFICATIONS.map((c) => (
+                <li key={c.title} className={styles.certCard}>
+                  <span className={styles.certCardDot} />
+                  <div>
+                    <span className={styles.certCardTitle}>{c.title}</span>
+                    <span className={styles.certCardSub}>{c.sub}</span>
+                  </div>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </div>
