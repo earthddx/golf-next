@@ -1,6 +1,6 @@
 'use client'
 import { useState } from 'react'
-import { MapPin, Mail } from 'lucide-react'
+import { Mail } from 'lucide-react'
 import styles from '@/app/App.module.css'
 
 export default function ContactSection() {
@@ -133,17 +133,6 @@ export default function ContactSection() {
 
           <div className={styles.contactInfo}>
             <div className={styles.contactCard}>
-              <MapPin size={22} className={styles.contactIcon} />
-              <div>
-                <h4>Location</h4>
-                <p>
-                  Alle Golf Lab LLC
-                  <br />
-                  Available in-person &amp; online
-                </p>
-              </div>
-            </div>
-            <div className={styles.contactCard}>
               <Mail size={22} className={styles.contactIcon} />
               <div>
                 <h4>Email</h4>
@@ -156,6 +145,16 @@ export default function ContactSection() {
                 game.&rdquo;
               </p>
               <span>— Alessandra Miller</span>
+            </div>
+            <div className={styles.contactCard}>
+              <div className={styles.contactSteps}>
+                <h4>What to expect</h4>
+                <ol>
+                  <li>Send your message</li>
+                  <li>Hear back within 24 hours</li>
+                  <li>Map out your plan together</li>
+                </ol>
+              </div>
             </div>
           </div>
         </div>
