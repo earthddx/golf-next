@@ -309,50 +309,46 @@
   background: var(--white);
 }
 
-.aboutGrid {
-  display: grid;
-  grid-template-columns: 2fr 3fr;
-  gap: 60px;
-  align-items: stretch;
-}
-
-.aboutCertsCol {
+.aboutCard {
   background: var(--green-900);
-  border-radius: 12px;
-  padding: 40px 36px;
-  display: flex;
-  flex-direction: column;
+  border-radius: 16px;
+  overflow: hidden;
 }
 
-.aboutCertsCol .certSectionLabel {
-  color: var(--gold);
-  margin-bottom: 28px;
+.aboutProfile {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 52px 52px 40px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.aboutCertsPanel {
+  padding: 36px 52px 44px;
+}
+
+.aboutCertsPanel .certSectionLabel {
+  margin-bottom: 24px;
 }
 
 .certCardList {
   list-style: none;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 0;
-  flex: 1;
 }
 
 .certCard {
   display: flex;
   align-items: flex-start;
-  gap: 12px;
-  padding: 14px 12px 14px 0;
+  gap: 10px;
+  padding: 12px 12px 12px 0;
   border-bottom: 1px solid rgba(255,255,255,0.08);
 }
 
-.certCard:last-child,
-.certCard:nth-last-child(2):nth-child(odd) {
-  border-bottom: none;
-}
-
 .certCardDot {
-  width: 8px;
-  height: 8px;
+  width: 6px;
+  height: 6px;
   background: var(--gold);
   border-radius: 50%;
   flex-shrink: 0;
@@ -361,7 +357,7 @@
 
 .certCardTitle {
   display: block;
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 600;
   color: var(--white);
   margin-bottom: 2px;
@@ -369,8 +365,9 @@
 
 .certCardSub {
   display: block;
-  font-size: 13px;
+  font-size: 11px;
   color: rgba(255,255,255,0.5);
+  line-height: 1.4;
 }
 
 .eduSection {
@@ -398,11 +395,13 @@
   letter-spacing: 0.04em;
 }
 
-.aboutText {
-  background: var(--green-50);
-  border: 1px solid var(--green-100);
-  border-radius: 12px;
-  padding: 48px 40px;
+.aboutCardTitle {
+  font-family: var(--font-playfair), serif;
+  font-size: clamp(28px, 3vw, 40px);
+  font-weight: 700;
+  color: var(--white);
+  line-height: 1.2;
+  margin-bottom: 20px;
 }
 
 
@@ -422,7 +421,7 @@
   font-weight: 700;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--green-600);
+  color: var(--gold);
   margin-bottom: 12px;
 }
 
@@ -435,7 +434,7 @@
 
 .aboutParagraph {
   font-size: 16px;
-  color: var(--gray-600);
+  color: rgba(255,255,255,0.7);
   line-height: 1.8;
   margin-bottom: 16px;
 }
@@ -445,7 +444,7 @@
   font-weight: 700;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--green-500);
+  color: var(--gold);
   margin-bottom: 14px;
 }
 
@@ -1328,13 +1327,20 @@ a.affiliateItem:hover .affiliateLogo {
     flex-direction: column;
   }
 
-  .aboutGrid {
-    grid-template-columns: 1fr;
-    gap: 48px;
+  .aboutProfile {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 36px 24px 28px;
+    gap: 24px;
+  }
+
+  .aboutCertsPanel {
+    padding: 28px 24px 36px;
   }
 
   .certCardList {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 
   .aboutImg {
