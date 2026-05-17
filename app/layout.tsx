@@ -77,7 +77,7 @@ const jsonLd = {
       '@id': '#alessandra',
       name: 'Alessandra Miller',
       jobTitle: 'Golf Biomechanics Coach & Fitness Trainer',
-      worksFor: { '@type': 'Organization', name: 'Alle Golf Lab LLC' },
+      founder: { '@type': 'Organization', name: 'Alle Golf Lab LLC' },
       email: 'allemiller@allegolflab.com',
     },
   ],

@@ -24,8 +24,8 @@ export default function MedPartnersSection() {
             Trusted Medical Partners
           </h2>
           <p className={styles.sectionDesc} style={{ color: 'rgba(255,255,255,0.65)' }}>
-            Alessandra partners with leading medical specialists to offer her
-            clients a complete path to health, recovery, and performance.
+            Through Alle Golf Lab, Alessandra collaborates with leading medical
+            specialists to offer her clients a complete path to health, recovery, and performance.
           </p>
         </div>
 
