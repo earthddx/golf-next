@@ -28,6 +28,7 @@ components/
   ServicesSection.tsx
   MethodSection.tsx
   AffiliateSection.tsx
+  AreasSection.tsx
   MedPartnersSection.tsx
   ContactSection.tsx
   Footer.tsx
@@ -49,10 +50,10 @@ Open [http://localhost:3000](http://localhost:3000).
 
 ## Contact form setup
 
-The contact form uses [Formspree](https://formspree.io). Replace the placeholder in `components/ContactSection.tsx`:
+The contact form uses [Formspree](https://formspree.io). The form ID is already configured in `components/ContactSection.tsx` (`xrejywzj`). To swap it out, update the fetch URL:
 
 ```ts
-fetch('https://formspree.io/f/REPLACE_WITH_FORM_ID', ...)
+fetch('https://formspree.io/f/YOUR_FORM_ID', ...)
 ```
 
 ## Scripts
