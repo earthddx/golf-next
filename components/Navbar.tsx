@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react'
 import { scrollToSection } from '@/lib/utils'
 
-const NAV_LINKS = ['About', 'Services', 'Method', 'Partners', 'Contact']
+const NAV_LINKS = ['About', 'Services', 'Method', 'Contact']
 import styles from '@/app/App.module.css'
 
 export default function Navbar() {

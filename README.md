@@ -29,7 +29,6 @@ components/
   MethodSection.tsx
   AffiliateSection.tsx
   AreasSection.tsx
-  MedPartnersSection.tsx
   ContactSection.tsx
   Footer.tsx
   LinkedInIcon.tsx

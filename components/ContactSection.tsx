@@ -79,27 +79,6 @@ export default function ContactSection() {
               </select>
             </div>
 
-            <div className={styles.formDivider}>
-              <span>Also interested in Dr. Iskander&apos;s services?</span>
-            </div>
-
-            <div className={styles.formGroup}>
-              <label className={styles.label}>Medical Services — Interested In</label>
-              <select className={styles.input} name="medicalInterest">
-                <option value="">Select a service (optional)…</option>
-                <option>Weight Loss (GLP-1)</option>
-                <option>Biote Hormone Replacement</option>
-                <option>MonaLisa Laser Treatment</option>
-                <option>Pelvic Floor Therapy</option>
-                <option>IV Therapy</option>
-                <option>CO₂ Laser</option>
-                <option>PDO Threads</option>
-                <option>Facials</option>
-                <option>HydroFacial</option>
-                <option>Botox</option>
-                <option>Fillers</option>
-              </select>
-            </div>
             <div className={styles.formGroup}>
               <label className={styles.label}>Message</label>
               <textarea

@@ -6,7 +6,6 @@ import AboutSection from "@/components/AboutSection";
 import ServicesSection from "@/components/ServicesSection";
 import MethodSection from "@/components/MethodSection";
 import AffiliateSection from "@/components/AffiliateSection";
-import MedPartnersSection from "@/components/MedPartnersSection";
 import AreasSection from "@/components/AreasSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
@@ -21,7 +20,6 @@ export default function Home() {
       <ServicesSection />
       <MethodSection />
       <AffiliateSection />
-      <MedPartnersSection />
       <AreasSection />
       <ContactSection />
       <Footer />
