@@ -25,10 +25,9 @@ export default function AboutSection() {
   return (
     <section id="about" className={styles.about}>
       <div className={styles.container}>
-        <div className={styles.aboutCard}>
-          <div className={styles.aboutGrid}>
+        <div className={styles.aboutGrid}>
 
-            <aside className={styles.aboutIntro}>
+          <aside className={styles.aboutIntro}>
               <div className={styles.avatarFrame}>
                 <img
                   src="/thumbnail.jpeg"
@@ -85,9 +84,8 @@ export default function AboutSection() {
                   ))}
                 </ul>
               </div>
-            </div>
-
           </div>
+
         </div>
       </div>
     </section>
