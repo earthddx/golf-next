@@ -14,7 +14,8 @@
       "Bash(curl -sLo public/images/services/kvest.jpg \"https://images.unsplash.com/photo-1587174486073-ae5e5cff23aa?auto=format&fit=crop&w=800&q=80\")",
       "Bash(curl -sLo \"d:/Projects/golf-next/public/images/dr-iskander.jpg\" \"https://www.restonobgyn.com/wp-content/uploads/2025/08/dr-iskander-pro-image.jpg\")",
       "PowerShell(Get-ChildItem \"d:\\\\Projects\\\\golf-next\" | Where-Object { $_.Name -ne 'node_modules' -and $_.Name -ne '.next' } | Select-Object Name, PSIsContainer)",
-      "Bash(dir \"d:\\\\Projects\\\\golf-next\" /b)"
+      "Bash(dir \"d:\\\\Projects\\\\golf-next\" /b)",
+      "Bash(npx next *)"
     ]
   }
 }

@@ -15,25 +15,46 @@ const CERTIFICATIONS = [
   { title: 'Kids Swimming Coach', sub: 'Youth Aquatic Coaching Certification' },
 ]
 
+const HIGHLIGHTS = [
+  { value: '20+', label: 'Years in Sports Science' },
+  { value: '12', label: 'Certifications' },
+  { value: '1:1', label: 'Individualized Programs' },
+]
+
 export default function AboutSection() {
   return (
     <section id="about" className={styles.about}>
       <div className={styles.container}>
         <div className={styles.aboutCard}>
+          <div className={styles.aboutGrid}>
 
-          <div className={styles.aboutProfile}>
-            <img
-              src="/thumbnail.jpeg"
-              alt="Alessandra Miller"
-              className={styles.avatar}
-            />
-            <div>
+            <aside className={styles.aboutIntro}>
+              <div className={styles.avatarFrame}>
+                <img
+                  src="/thumbnail.jpeg"
+                  alt="Alessandra Miller"
+                  className={styles.avatar}
+                />
+              </div>
+              <h3 className={styles.aboutName}>Alessandra Miller</h3>
+              <p className={styles.aboutRole}>Founder · Alle Golf Lab LLC</p>
+
+              <ul className={styles.aboutHighlights}>
+                {HIGHLIGHTS.map((h) => (
+                  <li key={h.label} className={styles.aboutHighlight}>
+                    <span className={styles.aboutHighlightValue}>{h.value}</span>
+                    <span className={styles.aboutHighlightLabel}>{h.label}</span>
+                  </li>
+                ))}
+              </ul>
+            </aside>
+
+            <div className={styles.aboutMain}>
               <p className={styles.sectionEyebrow}>About Alessandra</p>
               <h2 className={styles.aboutCardTitle}>
-                Where Biomechanics
-                <br />
-                Meets the Fairway
+                Where Biomechanics Meets the Fairway
               </h2>
+
               <p className={styles.aboutParagraph}>
                 Alessandra Miller is a certified golf fitness specialist and
                 biomechanics expert, and the founder of Alle Golf Lab LLC — a practice
@@ -47,24 +68,26 @@ export default function AboutSection() {
                 allows her to assess each golfer as a whole athlete and build
                 individualized programs that produce lasting results on the course.
               </p>
+
+              <div className={styles.aboutCertsPanel}>
+                <p className={styles.certSectionLabel}>Education &amp; Certifications</p>
+                <ul className={styles.certCardList}>
+                  {CERTIFICATIONS.map((c, i) => (
+                    <li key={c.title} className={styles.certCard}>
+                      <span className={styles.certNum}>
+                        {String(i + 1).padStart(2, '0')}
+                      </span>
+                      <div>
+                        <span className={styles.certCardTitle}>{c.title}</span>
+                        <span className={styles.certCardSub}>{c.sub}</span>
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
-          </div>
 
-          <div className={styles.aboutCertsPanel}>
-            <p className={styles.certSectionLabel}>Education &amp; Certifications</p>
-            <ul className={styles.certCardList}>
-              {CERTIFICATIONS.map((c) => (
-                <li key={c.title} className={styles.certCard}>
-                  <span className={styles.certCardDot} />
-                  <div>
-                    <span className={styles.certCardTitle}>{c.title}</span>
-                    <span className={styles.certCardSub}>{c.sub}</span>
-                  </div>
-                </li>
-              ))}
-            </ul>
           </div>
-
         </div>
       </div>
     </section>

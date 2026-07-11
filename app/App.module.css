@@ -305,115 +305,172 @@
 
 /* ── ABOUT ── */
 .about {
-  padding: 100px 0;
+  padding: 120px 0;
   background: var(--white);
 }
 
 .aboutCard {
-  background: var(--green-900);
-  border-radius: 16px;
+  position: relative;
+  background:
+    radial-gradient(120% 80% at 0% 0%, rgba(201,168,76,0.10), transparent 55%),
+    var(--green-900);
+  border: 1px solid rgba(201,168,76,0.16);
+  border-radius: 28px;
   overflow: hidden;
+  padding: 72px;
 }
 
-.aboutProfile {
+.aboutGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 340px) 1fr;
+  gap: 72px;
+  align-items: start;
+}
+
+/* ── Left / profile column ── */
+.aboutIntro {
+  position: sticky;
+  top: 96px;
+}
+
+.avatarFrame {
+  position: relative;
+  padding: 8px;
+  border-radius: 24px;
+  background: linear-gradient(150deg, rgba(201,168,76,0.55), rgba(201,168,76,0.05));
+  margin-bottom: 28px;
+}
+
+.avatar {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 18px;
+  filter: contrast(1.05) saturate(1.05);
+}
+
+.aboutName {
+  font-family: var(--font-playfair), serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--white);
+  line-height: 1.2;
+}
+
+.aboutRole {
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  color: var(--gold);
+  margin-top: 6px;
+}
+
+.aboutHighlights {
+  list-style: none;
   display: flex;
-  align-items: flex-start;
-  gap: 40px;
-  padding: 52px 52px 40px;
-  border-bottom: 1px solid rgba(255,255,255,0.08);
+  gap: 12px;
+  margin-top: 28px;
+  padding-top: 28px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.aboutHighlight {
+  flex: 1;
+}
+
+.aboutHighlightValue {
+  display: block;
+  font-family: var(--font-playfair), serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--gold-light);
+  line-height: 1;
+}
+
+.aboutHighlightLabel {
+  display: block;
+  font-size: 11px;
+  color: rgba(255,255,255,0.55);
+  line-height: 1.35;
+  margin-top: 8px;
+}
+
+/* ── Right / main column ── */
+.aboutCardTitle {
+  font-family: var(--font-playfair), serif;
+  font-size: clamp(30px, 3.2vw, 46px);
+  font-weight: 700;
+  color: var(--white);
+  line-height: 1.15;
+  margin-bottom: 24px;
+  max-width: 18ch;
+}
+
+.aboutParagraph {
+  font-size: 16px;
+  color: rgba(255,255,255,0.72);
+  line-height: 1.85;
+  margin-bottom: 18px;
 }
 
 .aboutCertsPanel {
-  padding: 36px 52px 44px;
+  margin-top: 44px;
+  padding-top: 40px;
+  border-top: 1px solid rgba(255,255,255,0.1);
 }
 
 .aboutCertsPanel .certSectionLabel {
-  margin-bottom: 24px;
+  margin-bottom: 22px;
 }
 
 .certCardList {
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 0;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
 }
 
 .certCard {
   display: flex;
   align-items: flex-start;
-  gap: 10px;
-  padding: 12px 12px 12px 0;
-  border-bottom: 1px solid rgba(255,255,255,0.08);
+  gap: 14px;
+  padding: 18px;
+  background: rgba(255,255,255,0.035);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 14px;
+  transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
 }
 
-.certCardDot {
-  width: 6px;
-  height: 6px;
-  background: var(--gold);
-  border-radius: 50%;
+.certCard:hover {
+  transform: translateY(-3px);
+  border-color: rgba(201,168,76,0.45);
+  background: rgba(201,168,76,0.06);
+}
+
+.certNum {
+  font-family: var(--font-playfair), serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--gold);
+  line-height: 1.4;
   flex-shrink: 0;
-  margin-top: 6px;
 }
 
 .certCardTitle {
   display: block;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 600;
   color: var(--white);
-  margin-bottom: 2px;
+  margin-bottom: 4px;
+  line-height: 1.35;
 }
 
 .certCardSub {
   display: block;
-  font-size: 11px;
-  color: rgba(255,255,255,0.5);
-  line-height: 1.4;
-}
-
-.eduSection {
-  margin-top: 32px;
-  padding-top: 28px;
-  border-top: 1px solid rgba(255,255,255,0.12);
-}
-
-.eduSection .certSectionLabel {
-  color: var(--gold);
-  margin-bottom: 16px;
-}
-
-.eduCard {
-  display: flex;
-  align-items: flex-start;
-  gap: 16px;
-}
-
-.eduYear {
-  display: block;
   font-size: 12px;
-  color: rgba(255,255,255,0.35);
-  margin-top: 4px;
-  letter-spacing: 0.04em;
-}
-
-.aboutCardTitle {
-  font-family: var(--font-playfair), serif;
-  font-size: clamp(28px, 3vw, 40px);
-  font-weight: 700;
-  color: var(--white);
-  line-height: 1.2;
-  margin-bottom: 20px;
-}
-
-
-.avatar {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid var(--green-100);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  margin-bottom: 20px;
-  filter: contrast(1.05) saturate(1.05);
+  color: rgba(255,255,255,0.5);
+  line-height: 1.45;
 }
 
 .sectionEyebrow {
@@ -1220,20 +1277,28 @@ a.affiliateItem:hover .affiliateLogo {
     flex-direction: column;
   }
 
-  .aboutProfile {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 36px 24px 28px;
-    gap: 24px;
+  .aboutCard {
+    padding: 32px 24px;
+    border-radius: 20px;
   }
 
-  .aboutCertsPanel {
-    padding: 28px 24px 36px;
+  .aboutGrid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .aboutIntro {
+    position: static;
+  }
+
+  .avatarFrame {
+    max-width: 280px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .certCardList {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 
   .aboutImg {
@@ -1256,14 +1321,6 @@ a.affiliateItem:hover .affiliateLogo {
   .statItem {
     flex: 0 0 50%;
     border-bottom: 1px solid rgba(255,255,255,0.08);
-  }
-
-  .avatar {
-    width: 180px;
-    height: 180px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   .contactGrid {
