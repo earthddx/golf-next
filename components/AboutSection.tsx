@@ -59,35 +59,43 @@ export default function AboutSection() {
                 biomechanics expert, and the founder of Alle Golf Lab LLC — a practice
                 built entirely around her expertise. With a deep commitment to
                 evidence-based coaching, she bridges the worlds of sports science,
-                rehabilitation, and high-performance golf training.
+                rehabilitation, and high-performance golf training. Rather than
+                chasing quick swing fixes, she studies how each golfer's body
+                actually moves, uncovering the physical limitations and
+                compensations that quietly hold a game back.
               </p>
               <p className={styles.aboutParagraph}>
                 Her multidisciplinary background — spanning TPI Golf Fitness,
                 K-Vest 3D motion analysis, ELDOA, and NASM Corrective Exercise —
-                allows her to assess each golfer as a whole athlete and build
-                individualized programs that produce lasting results on the course.
+                allows her to assess each golfer as a whole athlete. Drawing on
+                years across strength training, aquatics, competitive grappling,
+                and sport psychology, she builds individualized programs that
+                improve mobility, stability, and power while reducing the risk of
+                injury — producing lasting results that hold up under the pressure
+                of real play, not just in the gym.
               </p>
+            </div>
 
-              <div className={styles.aboutCertsPanel}>
-                <p className={styles.certSectionLabel}>Education &amp; Certifications</p>
-                <ul className={styles.certCardList}>
-                  {CERTIFICATIONS.map((c, i) => (
-                    <li key={c.title} className={styles.certCard}>
-                      <span className={styles.certNum}>
-                        {String(i + 1).padStart(2, '0')}
-                      </span>
-                      <div>
-                        <span className={styles.certCardTitle}>{c.title}</span>
-                        <span className={styles.certCardSub}>{c.sub}</span>
-                      </div>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+          </div>
+
+          <div className={styles.aboutCertsPanel}>
+            <p className={styles.certSectionLabel}>Education &amp; Certifications</p>
+            <ul className={styles.certCardList}>
+              {CERTIFICATIONS.map((c, i) => (
+                <li key={c.title} className={styles.certCard}>
+                  <span className={styles.certNum}>
+                    {String(i + 1).padStart(2, '0')}
+                  </span>
+                  <div>
+                    <span className={styles.certCardTitle}>{c.title}</span>
+                    <span className={styles.certCardSub}>{c.sub}</span>
+                  </div>
+                </li>
+              ))}
+            </ul>
           </div>
 
         </div>
-      </div>
     </section>
   )
 }
